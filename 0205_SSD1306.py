@@ -17,7 +17,7 @@ import time
 i2c = machine.SoftI2C(sda=machine.Pin(21), scl=machine.Pin(22))
 oled = SSD1306_I2C(128, 32, i2c)
 
-with open("semaforo.pbm", 'rb') as f: #read binary
+with open("blackboxD1.pbm", 'rb') as f: #read binary
     f.readline()
     f.readline()
     data = bytearray(f.read())
