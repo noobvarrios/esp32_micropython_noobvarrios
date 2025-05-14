@@ -23,7 +23,7 @@ def configurar_MAX7219():
     cs.on()
 
     cs.off()
-    hspi.write(b'\x0B\x03') #SCAN LIMIT CANTIDAD DE REGISTROS DISPONIBLES 
+    hspi.write(b'\x0B\x07') #SCAN LIMIT CANTIDAD DE REGISTROS DISPONIBLES
     cs.on()
 
     cs.off()
@@ -42,22 +42,32 @@ def mostrar_numero(numero):
         cs.on() #SE CARGA EL DATO. 
         numero //= 10
 
+def limpiar_display():
+    for i in range(1, 9):  # Hay 8 dígitos (1 a 8)
+        cs.off()
+        hspi.write(bytes([i, 0x00]))  # Apaga todos los segmentos del dígito
+        cs.on()
+        
 configurar_MAX7219()
+# limpiar_display()
 
-contador = 0
+segmentos = {
+    'A': 0b01000000,
+    'B': 0b00100000,
+    'C': 0b00010000,
+    'D': 0b00001000,
+    'E': 0b00000100,
+    'F': 0b00000010,
+    'G': 0b00000001,
+    'DP': 0b10000000,
+}
 
-while True:
-    cs.off()
-    hspi.write(bytes([1,0b01110111]))
-    hspi.write(bytes([2,0b10011111]))
-    hspi.write(bytes([3,0b01001110]))
-    hspi.write(bytes([4,0b00111101]))
-    cs.on()
+for i in range (1,100,1):
+    for nombre, valor in segmentos.items():
+        for i in range(1, 9):
+            cs.off()
+            hspi.write(bytes([i, valor]))
+            cs.on()
+        print("Segmento encendido:", nombre)
+        time.sleep(1)
     
-    
-    
-#     mostrar_numero(contador)
-#     contador += 2
-#     if contador > 99999999: 
-#         contador = 0
-#     time.sleep(1)  
