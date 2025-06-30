@@ -1,3 +1,4 @@
+#4. Control Binario c. Generacion de eventos con combinaciones dip-switch. 
 from machine import Pin, Timer
 import time
 

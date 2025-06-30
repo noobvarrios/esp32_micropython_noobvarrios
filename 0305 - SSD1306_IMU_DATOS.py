@@ -1,3 +1,5 @@
+#5. Visualizacion de datos. f. Visualizacion en pantallas OLED. 
+
 from machine import Pin, SoftI2C, Timer
 import machine
 import time

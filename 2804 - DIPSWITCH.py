@@ -1,3 +1,4 @@
+#4. Control Binario b. Lectura de entradas de dip-switch.
 from machine import Pin, Timer
 
 led4 = Pin(4, Pin.IN, Pin.PULL_UP)

@@ -1,3 +1,4 @@
+#5.Visualizacion de datos. b. Conceptos de Display de 7 segmentos. 
 from machine import Pin, SPI
 import time
 

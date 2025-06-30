@@ -7,7 +7,8 @@ def do_connect():
     wlan.active(True)
     if not wlan.isconnected():
         print('connecting to network...')
-        wlan.connect('WiFi-DGAETIC', 'DGAnalisis-2024#')
+        #wlan.connect('WiFi-DGAETIC', 'DGAnalisis-2024#')
+        wlan.connect('INFINITUM_CDE_5','InfC202402')
         while not wlan.isconnected():
             machine.idle()
     print('network config:', wlan.ifconfig())

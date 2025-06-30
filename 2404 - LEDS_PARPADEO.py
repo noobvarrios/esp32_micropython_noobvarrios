@@ -1,3 +1,4 @@
+#2. Diodos LED - c. Parpadeos Sincronizados.
 from machine import Pin
 import time
 

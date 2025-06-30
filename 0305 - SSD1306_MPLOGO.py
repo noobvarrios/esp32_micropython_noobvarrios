@@ -1,6 +1,8 @@
 #14. Using a SSD1306 OLED oled
 #https://docs.micropython.org/en/latest/esp8266/tutorial/ssd1306.html
 
+#5.Visualizacion de datos. c.Introduccion al manejo de archivos con Python. 
+
 import machine
 from ssd1306 import SSD1306_I2C
 import framebuf

@@ -1,3 +1,6 @@
+#5.Visualizacion de datos. d. Visualizacion de archivos PBM.
+#e. Generacion de imagenes en formato monocromatico de mapa de bits. 
+
 """
 TEORIA: 
     Imagen BPM

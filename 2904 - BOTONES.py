@@ -1,3 +1,4 @@
+#3. Lectura de Botones b. Lectura de entradas. 
 from machine import Pin, Timer
 import time
 

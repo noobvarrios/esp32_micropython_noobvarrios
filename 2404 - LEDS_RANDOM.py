@@ -1,3 +1,5 @@
+#2. Diodos LED - d. Parpadeos aleatorios. 
+
 from machine import Pin
 import time
 import random
@@ -16,6 +18,6 @@ leds = [
 while True:
     led = random.choice(leds)
     led.on()
-    time.sleep(0.5)
+    time.sleep(0.1)
     led.off()
-    time.sleep(0.5)
+    time.sleep(0.1)

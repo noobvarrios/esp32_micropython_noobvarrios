@@ -1,3 +1,4 @@
+#6. Sonidos c. Uso del Buzzer
 from machine import Pin, PWM
 import time
 
