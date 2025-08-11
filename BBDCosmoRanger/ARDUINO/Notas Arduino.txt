@@ -1,0 +1,15 @@
+@Librerias
+	La libreria utilizada no se encuentra en el Administrador de Bibliotecas de Arduino. 
+	Se descarga el ZIP y carga la libreria. 
+	git: https://github.com/sandeepmistry/arduino-LoRa
+	
+@Codigo
+	Sobre [0810 - Lora Sender Headers.]
+		Fue modificado para que ARDUINONANO enviara los headers necesarios para que ulora(MP) pudiera recibir los datos. 
+		
+		Opciones: 
+			1. Seguir solicitando los headers al NANO.
+			2. Modificar la libreria de ulora(MP) para que no solicite los headers y reciba cualquier paquete. 
+				message = bytes(packet)
+				header_to = header_from = header_id = header_flags = 0
+		

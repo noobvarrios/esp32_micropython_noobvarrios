@@ -1,0 +1,25 @@
+Codigos y recursos para el desarrollo de COSMORANGER
+
+@Componentes (UNIT ELECTRONICS tiene muchos recursos al respecto)
+	RFM95W
+	Antena 3dbi SMA Macho 915 MHz
+	Conector SMA
+	AHT20 + BMP280
+	Nano AtMega328P
+	
+@LORA
+	1. RandomNerdTutorial: [La mayor parte de los codigos para Arduino][Trabaja con una ESP32 pero la libreria es la misma]	https://randomnerdtutorials.com/esp32-lora-rfm95-transceiver-arduino-ide/
+	
+	2. DroneBotWorkshop: [Libreria ulora.py] [Recorre un poco de las funciones] https://dronebotworkshop.com/lora/
+	
+	3. SPI Micropython https://docs.micropython.org/en/latest/library/machine.SPI.html#machine.SPI
+	
+@githubs
+	1. ULORA [https://github.com/martynwheeler/u-lora]
+	
+	2. Libreria Lora Sandeepmistry [https://github.com/sandeepmistry/arduino-LoRa]
+	
+	3. Checar librerias ODB2 Sandeepmistry. 
+
+
+	
